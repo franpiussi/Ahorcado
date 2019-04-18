@@ -4,7 +4,7 @@
 
 
 
-El Thread tiene 4 estados diferentes:
+  El Thread tiene 4 estados diferentes:
 * New: El thread ha sido creado pero no inicializado, es decir, no se ha ejecutado todavía el método start(). Se producirá un mensaje de error (IllegalThreadStateException) si se intenta ejecutar cualquier método de la clase Thread distinto de start().
 
 * Start: Cuando se invoca el método start() del hilo, se dice que está en estado listo. El método se arranca con la siguiente instrucción.
