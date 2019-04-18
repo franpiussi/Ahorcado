@@ -1,6 +1,6 @@
 # Ahorcado
 
-Runnable es una interfaz que es necesaria para instanciar un Thread (Hilo). El Thread ya tiene la capacidad de generar un hilo pero si deseamos que una clase sea ejecutada en un Thread debemos implementar esta interface. El thread por otra parte es un flujo simple de ejecución dentro de un programa.
+* Runnable es una interfaz que es necesaria para instanciar un Thread (Hilo). El Thread ya tiene la capacidad de generar un hilo pero si deseamos que una clase sea ejecutada en un Thread debemos implementar esta interface. El thread por otra parte es un flujo simple de ejecución dentro de un programa.
 
 
 
