@@ -1,14 +1,11 @@
 # Ahorcado
 
-DIFERENCIAS ENTRE THREAD Y RUNNABLE
+* Runnable es una interfaz que es necesaria para instanciar un Thread (Hilo). El Thread ya tiene la capacidad de generar un hilo pero si deseamos que una clase sea ejecutada en un Thread debemos implementar esta interface. El thread por otra parte es un flujo simple de ejecución dentro de un programa.
 
-* Para utilizar RUNNABLE debemos implementar la interfaz runnable, y si queremos utilizar THREAD debemos extender de Thread. 
 
-* Si utilizamos RUNNABLE debemos primero crear una instancia de tipo Thread y le pasamos por parámetro una nueva instacia de nuestra clase que implementa Runnable, para luego llamar al método start() del thread instanciado.
 
-* Si utilizamos THREAD debemos crear un objeto de nuestra clase y llamamos al metodo start().
 
-El Thread tiene 4 estados diferentes:
+  El Thread tiene 4 estados diferentes:
   
 * New: El thread ha sido creado pero no inicializado, es decir, no se ha ejecutado todavía el método start(). Se producirá un mensaje de error (IllegalThreadStateException) si se intenta ejecutar cualquier método de la clase Thread distinto de start().
 
