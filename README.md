@@ -2,9 +2,11 @@
 
 DIFERENCIAS ENTRE THREAD Y RUNNABLE
 
-*Para utilizar RUNNABLE debemos implementar la interfaz runnable, y si queremos utilizar THREAD debemos extender de Thread. 
-*Si utilizamos RUNNABLE debemos primero crear una instancia de tipo Thread y le pasamos por parámetro una nueva instacia de nuestra clase que implementa Runnable, para luego llamar al método start() del thread instanciado. 
-*Si utilizamos THREAD debemos crear un objeto de nuestra clase y llamamos al metodo start().
+* Para utilizar RUNNABLE debemos implementar la interfaz runnable, y si queremos utilizar THREAD debemos extender de Thread. 
+
+* Si utilizamos RUNNABLE debemos primero crear una instancia de tipo Thread y le pasamos por parámetro una nueva instacia de nuestra clase que implementa Runnable, para luego llamar al método start() del thread instanciado.
+
+* Si utilizamos THREAD debemos crear un objeto de nuestra clase y llamamos al metodo start().
 
 El Thread tiene 4 estados diferentes:
   
