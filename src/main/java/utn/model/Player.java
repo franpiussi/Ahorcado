@@ -3,8 +3,6 @@ package utn.model;
 import org.apache.commons.lang3.ArrayUtils;
 import utn.Game;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Random;
 
 

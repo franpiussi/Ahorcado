@@ -13,16 +13,18 @@ public class Game {
     private boolean avaliable = true;
     private Word word;
     private String wordDB;
+    boolean showWord = false;
 
     public Game (){
 
         this.word = jdbc.getWord();
         this.wordDB = word.getWord();
-        System.out.println("PALABRA ALEATORIA: "+ word);
 
     }
 
-
+    /*public void showWord(){
+        System.out.println("PALABRA ALEATORIA: "+ word);
+    }*/
     public synchronized void play (Player player){
 
         while (!avaliable){
@@ -35,10 +37,11 @@ public class Game {
         }
 
         avaliable = false;
-        /*if (!player.isWinner() && !word.getWord().isEmpty() && player.alphabetEmpty()){
-            System.out.println("/--------------JUGADOR "+ player.getPlayerName() +"-----------------/");
-            System.out.println("Palabra: "+ word);
-        }*/
+
+        while (!showWord){
+            System.out.println("PALABRA ALEATORIA: " + this.wordDB);
+            showWord = true;
+        }
 
         if (!player.isWinner() && !word.getWord().isEmpty()){
             System.out.println("/--------------JUGADOR "+ player.getPlayerName() +"-----------------/");
